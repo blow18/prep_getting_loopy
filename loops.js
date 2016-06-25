@@ -18,4 +18,14 @@ function runStringOfNumbers() {
 	}
 	console.log(stringOfNumbers);
 }
-runStringOfNumbers();
+//runStringOfNumbers();
+
+function runEvenNumberArray() {
+	var evenNumberArray = [];
+
+	for (i = 0; i < 50; i++) {
+		evenNumberArray[i] = i * 2;
+	}
+	console.log(evenNumberArray);
+}
+runEvenNumberArray();
