@@ -1,41 +1,33 @@
 // Do your work here
 
-function runPresidents() {
-	var presidents = ["Washington", "Adams", "Jefferson", "Madison", "Monroe"];
-
+function runPresidents(presidents) {
 	for (i in presidents) {
 		console.log("The value of i is: " + i);
 		console.log("The value at Index is: " + presidents[i]);
 	}
 }
-//runPresidents();
+//runPresidents(["Washington", "Adams", "Jefferson", "Madison", "Monroe"]);
 
-function runStringOfNumbers() {
-	var stringOfNumbers = "";
-
+function runStringOfNumbers(stringOfNumbers) {
 	for (i = 10; i <= 20; i++) {
 		stringOfNumbers += i;
 	}
 	console.log(stringOfNumbers);
 }
-//runStringOfNumbers();
+//runStringOfNumbers("");
 
-function runEvenNumberArray() {
-	var evenNumberArray = [];
-
+function runEvenNumberArray(evenNumberArray) {
 	for (i = 0; i < 50; i++) {
 		evenNumberArray[i] = i * 2;
 	}
 	console.log(evenNumberArray);
 }
-//runEvenNumberArray();
+//runEvenNumberArray([]);
 
-function runOddIndexes() {
-	var oopsArray = ["turn", , "down", , "for", , "what"];
-
+function runOddIndexes(oopsArray) {
 	for (i = 1; i < oopsArray.length; i += 2) {
 		oopsArray[i] = "nope";
 	}
 	console.log(oopsArray);
 }
-runOddIndexes();
+//runOddIndexes(["turn", , "down", , "for", , "what"])
