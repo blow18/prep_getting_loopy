@@ -31,3 +31,10 @@ function runOddIndexes(oopsArray) {
 	console.log(oopsArray);
 }
 //runOddIndexes(["turn", , "down", , "for", , "what"])
+
+function runGoingBackwards(oopsArray) {
+	for (i = oopsArray.length - 1; i >= 0; i--) {
+		console.log(oopsArray[i]);
+	}
+}
+runGoingBackwards(["turn", "nope", "down", "nope", "for", "nope", "what"]);
