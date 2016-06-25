@@ -8,5 +8,14 @@ function runPresidents() {
 		console.log("The value at Index is: " + presidents[i]);
 	}
 }
+//runPresidents();
 
-runPresidents();
+function runStringOfNumbers() {
+	var stringOfNumbers = "";
+
+	for (i = 10; i <= 20; i++) {
+		stringOfNumbers += i;
+	}
+	console.log(stringOfNumbers);
+}
+runStringOfNumbers();
