@@ -28,4 +28,14 @@ function runEvenNumberArray() {
 	}
 	console.log(evenNumberArray);
 }
-runEvenNumberArray();
+//runEvenNumberArray();
+
+function runOddIndexes() {
+	var oopsArray = ["turn", , "down", , "for", , "what"];
+
+	for (i = 1; i < oopsArray.length; i += 2) {
+		oopsArray[i] = "nope";
+	}
+	console.log(oopsArray);
+}
+runOddIndexes();
