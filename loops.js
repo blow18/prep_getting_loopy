@@ -37,4 +37,21 @@ function runGoingBackwards(oopsArray) {
 		console.log(oopsArray[i]);
 	}
 }
-runGoingBackwards(["turn", "nope", "down", "nope", "for", "nope", "what"]);
+//runGoingBackwards(["turn", "nope", "down", "nope", "for", "nope", "what"]);
+
+var isNapTime = false;
+function nap(schedule) {
+	if (!schedule) {
+		console.log("Gotta get to work!");
+		isNapTime = false;
+		return;
+	}
+	console.log("ZzZzZzZz");
+	isNapTime = true;
+}
+function runNapTime(napTime, napSchedule) {
+	for (i in napSchedule) {
+		nap(napSchedule[i]);
+	}
+}
+runNapTime(isNapTime, [false, false, true, false, true, true]);
