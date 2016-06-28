@@ -13,7 +13,7 @@ function runPresidents(presidents) {
 
 
 
-/* String of Bumbers Challenge */
+/* String of Numbers Challenge */
 function appendToString(string, toAppend) {
 	var output = string += toAppend;
 	return output;
@@ -28,6 +28,9 @@ var numberString = "";
 numberString = runStringOfNumbers(numberString);
 console.log(numberString);
 
+
+
+/* Even Number Array Challenge */
 function runEvenNumberArray(evenNumberArray) {
 	for (var i = 0; i < 50; i++) {
 		evenNumberArray[i] = i * 2;
@@ -36,6 +39,9 @@ function runEvenNumberArray(evenNumberArray) {
 }
 //runEvenNumberArray([]);
 
+
+
+/* Odd Indexes Challenge */
 function runOddIndexes(oopsArray) {
 	for (var i = 1; i < oopsArray.length; i += 2) {
 		oopsArray[i] = "nope";
@@ -44,6 +50,9 @@ function runOddIndexes(oopsArray) {
 }
 //runOddIndexes(["turn", , "down", , "for", , "what"])
 
+
+
+/* Going Backwards Challenge */
 function runGoingBackwards(oopsArray) {
 	for (var i = oopsArray.length - 1; i >= 0; i--) {
 		console.log(oopsArray[i]);
@@ -51,6 +60,9 @@ function runGoingBackwards(oopsArray) {
 }
 //runGoingBackwards(["turn", "nope", "down", "nope", "for", "nope", "what"]);
 
+
+
+/* isNapTime Challenge */
 function nap(schedule) {
 	if (!schedule) {
 		console.log("Gotta get to work!");
@@ -68,6 +80,9 @@ function runNapTime(napTime, napSchedule) {
 //var isNapTime = false;
 //runNapTime(isNapTime, [false, false, true, false, true, true]);
 
+
+
+/* Copy Array Challenge */
 function copyArray(originArray, destinationArray) {
 	for (var i in originArray) {
 		destinationArray[i] = originArray[i];
@@ -79,6 +94,9 @@ copyArray(valuesArray, copyOfValuesArray);
 console.log(valuesArray);
 console.log(copyOfValuesArray);*/
 
+
+
+/* Final Boss Stage 1 */
 function generateArrayOfStrings(storage) {
 	var output = [];
 	for (var i in storage) {
@@ -91,6 +109,10 @@ function generateArrayOfStrings(storage) {
 //var miscStorage = [[], 'Carrots', 9, 'Beets', {}, {name: "Todd B."}, 'Mush'];
 //console.log(generateArrayOfStrings(miscStorage));
 
+
+
+
+/* Final Boss Final Stage */
 function graduateAndSetNewClass(clazz) {
 	for (var i in clazz) {
 		var student = clazz[i];
