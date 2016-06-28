@@ -1,7 +1,7 @@
 // Do your work here
 
 function runPresidents(presidents) {
-	for (i in presidents) {
+	for (var i in presidents) {
 		console.log("The value of i is: " + i);
 		console.log("The value at Index is: " + presidents[i]);
 	}
@@ -9,7 +9,7 @@ function runPresidents(presidents) {
 //runPresidents(["Washington", "Adams", "Jefferson", "Madison", "Monroe"]);
 
 function runStringOfNumbers(stringOfNumbers) {
-	for (i = 10; i <= 20; i++) {
+	for (var i = 10; i <= 20; i++) {
 		stringOfNumbers += i;
 	}
 	console.log(stringOfNumbers);
@@ -17,7 +17,7 @@ function runStringOfNumbers(stringOfNumbers) {
 //runStringOfNumbers("");
 
 function runEvenNumberArray(evenNumberArray) {
-	for (i = 0; i < 50; i++) {
+	for (var i = 0; i < 50; i++) {
 		evenNumberArray[i] = i * 2;
 	}
 	console.log(evenNumberArray);
@@ -25,7 +25,7 @@ function runEvenNumberArray(evenNumberArray) {
 //runEvenNumberArray([]);
 
 function runOddIndexes(oopsArray) {
-	for (i = 1; i < oopsArray.length; i += 2) {
+	for (var i = 1; i < oopsArray.length; i += 2) {
 		oopsArray[i] = "nope";
 	}
 	console.log(oopsArray);
@@ -33,13 +33,12 @@ function runOddIndexes(oopsArray) {
 //runOddIndexes(["turn", , "down", , "for", , "what"])
 
 function runGoingBackwards(oopsArray) {
-	for (i = oopsArray.length - 1; i >= 0; i--) {
+	for (var i = oopsArray.length - 1; i >= 0; i--) {
 		console.log(oopsArray[i]);
 	}
 }
 //runGoingBackwards(["turn", "nope", "down", "nope", "for", "nope", "what"]);
 
-var isNapTime = false;
 function nap(schedule) {
 	if (!schedule) {
 		console.log("Gotta get to work!");
@@ -50,8 +49,20 @@ function nap(schedule) {
 	isNapTime = true;
 }
 function runNapTime(napTime, napSchedule) {
-	for (i in napSchedule) {
+	for (var i in napSchedule) {
 		nap(napSchedule[i]);
 	}
 }
-runNapTime(isNapTime, [false, false, true, false, true, true]);
+//var isNapTime = false;
+//runNapTime(isNapTime, [false, false, true, false, true, true]);
+
+function copyArray(originArray, destinationArray) {
+	for (var i in originArray) {
+		destinationArray[i] = originArray[i];
+	}
+}
+var valuesArray = [99, 66, 829, 1941, 8, 76];
+var copyOfValuesArray = [];
+copyArray(valuesArray, copyOfValuesArray);
+console.log(valuesArray);
+console.log(copyOfValuesArray);
