@@ -61,8 +61,20 @@ function copyArray(originArray, destinationArray) {
 		destinationArray[i] = originArray[i];
 	}
 }
-var valuesArray = [99, 66, 829, 1941, 8, 76];
+/*var valuesArray = [99, 66, 829, 1941, 8, 76];
 var copyOfValuesArray = [];
 copyArray(valuesArray, copyOfValuesArray);
 console.log(valuesArray);
-console.log(copyOfValuesArray);
+console.log(copyOfValuesArray);*/
+
+function generateArrayOfStrings(storage) {
+	var output = [];
+	for (var i in storage) {
+		if (typeof storage[i] == "string") {
+			output[output.length] = storage[i];
+		}
+	}
+	return output;
+}
+var miscStorage = [[], 'Carrots', 9, 'Beets', {}, {name: "Todd B."}, 'Mush'];
+console.log(generateArrayOfStrings(miscStorage));
