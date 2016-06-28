@@ -1,5 +1,4 @@
-// Do your work here
-
+/* Presidents Challenge */
 function printContent(arrayToPrint, index) {
 	console.log("The value of i is: " + index);
 	console.log("The value at Index is: " + arrayToPrint[index]);
@@ -10,15 +9,24 @@ function runPresidents(presidents) {
 		console.log("The value at Index is: " + presidents[i]);
 	}
 }
-runPresidents(["Washington", "Adams", "Jefferson", "Madison", "Monroe"]);
+//runPresidents(["Washington", "Adams", "Jefferson", "Madison", "Monroe"]);
 
+
+
+/* String of Bumbers Challenge */
+function appendToString(string, toAppend) {
+	var output = string += toAppend;
+	return output;
+}
 function runStringOfNumbers(stringOfNumbers) {
 	for (var i = 10; i <= 20; i++) {
-		stringOfNumbers += i;
+		stringOfNumbers = appendToString(stringOfNumbers, i);
 	}
-	console.log(stringOfNumbers);
+	return stringOfNumbers;
 }
-//runStringOfNumbers("");
+var numberString = "";
+numberString = runStringOfNumbers(numberString);
+console.log(numberString);
 
 function runEvenNumberArray(evenNumberArray) {
 	for (var i = 0; i < 50; i++) {
