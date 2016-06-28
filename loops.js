@@ -76,5 +76,55 @@ function generateArrayOfStrings(storage) {
 	}
 	return output;
 }
-var miscStorage = [[], 'Carrots', 9, 'Beets', {}, {name: "Todd B."}, 'Mush'];
-console.log(generateArrayOfStrings(miscStorage));
+//var miscStorage = [[], 'Carrots', 9, 'Beets', {}, {name: "Todd B."}, 'Mush'];
+//console.log(generateArrayOfStrings(miscStorage));
+
+function graduateAndSetNewClass(clazz) {
+	for (var i in clazz) {
+		var student = clazz[i];
+		if (student.enrolled) {
+			student.graduated = true;
+		} else {
+			student.enrolled = true;
+		}
+	}
+}
+var currentClass = [
+  {
+    name: 'Doug',
+    graduated: false,
+    enrolled: true
+  },
+  {
+    name: 'Pat',
+    graduated: false,
+    enrolled: false
+  },
+  {
+    name: 'Marsha',
+    graduated: false,
+    enrolled: false
+  },
+  {
+    name: 'Moira',
+    graduated: false,
+    enrolled: true
+  },
+  {
+    name: 'Ben',
+    graduated: false,
+    enrolled: true
+  },
+  {
+    name: 'Nigel the Giraffe',
+    graduated: false,
+    enrolled: false
+  },
+  {
+    name: 'Brandon the Shark',
+    graduated: false,
+    enrolled: true
+  }
+];
+graduateAndSetNewClass(currentClass);
+console.log(currentClass);
