@@ -1,12 +1,16 @@
 // Do your work here
 
+function printContent(arrayToPrint, index) {
+	console.log("The value of i is: " + index);
+	console.log("The value at Index is: " + arrayToPrint[index]);
+}
 function runPresidents(presidents) {
 	for (var i in presidents) {
 		console.log("The value of i is: " + i);
 		console.log("The value at Index is: " + presidents[i]);
 	}
 }
-//runPresidents(["Washington", "Adams", "Jefferson", "Madison", "Monroe"]);
+runPresidents(["Washington", "Adams", "Jefferson", "Madison", "Monroe"]);
 
 function runStringOfNumbers(stringOfNumbers) {
 	for (var i = 10; i <= 20; i++) {
@@ -89,7 +93,7 @@ function graduateAndSetNewClass(clazz) {
 		}
 	}
 }
-var currentClass = [
+/*var currentClass = [
   {
     name: 'Doug',
     graduated: false,
@@ -127,4 +131,4 @@ var currentClass = [
   }
 ];
 graduateAndSetNewClass(currentClass);
-console.log(currentClass);
+console.log(currentClass);*/
